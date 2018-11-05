@@ -1,5 +1,6 @@
 package com.gonel.oguzhan.android_volley2;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -76,5 +77,12 @@ public class MainActivity extends AppCompatActivity {
         });
 
         requestQueue.add(stringRequest);
+    }
+
+    public void gotoSingletonActivity(View view){
+
+        Log.d("gotoSingleButton", "The go to Singleton Activity button has been clicked");
+        Intent intent = new Intent(MainActivity.this, SingletonActivity.class);
+        startActivity(intent);
     }
 }

@@ -4,35 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
+    tools:context=".SingletonActivity">
 
     <TextView
-        android:id="@+id/txtView"
+        android:id="@+id/singletonTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="73dp"
-        android:text="Server Response" />
+        android:text="Server Response to be displayed" />
 
     <Button
-        android:id="@+id/serverButton"
+        android:id="@+id/singletonButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="132dp"
-        android:onClick="serverButtonFunction"
-        android:text="Get Server Data" />
+        android:onClick="singletonRequestFunction"
+        android:text="Make call using Singleton" />
 
-    <Button
-        android:id="@+id/singletonActivityButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="211dp"
-        android:onClick="gotoSingletonActivity"
-        android:text="Go to Singleton Activity" />
 </RelativeLayout>
